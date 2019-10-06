@@ -1,4 +1,4 @@
-# SynthDragon
-Bug Tracking and possible Code Storage for my SynthDragon Starbound mod
+# StarboundSynthMod
+Bug Tracking and possible Code Storage for Synth Starbound mod
 
-NOTE: Please see the "Issues" Tab (https://github.com/Ahndrek-LiCyri/SynthDragon/issues) to make a bug report!
+NOTE: Please see the "Issues" Tab (https://github.com/Ahndrek-LiCyri/StarboundSynthMod/issues) to make a bug report!
