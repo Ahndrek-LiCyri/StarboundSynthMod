@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "ironbar", "count" : 5 },
+    { "item" : "copperbar", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "synthtier1chest", "count" : 1 },
+  "groups" : [ "craftinganvil", "armours", "all" ]
+}

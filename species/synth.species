@@ -1,0 +1,142 @@
+{
+  "kind" : "synth",
+	"charCreationTooltip" : {
+	"title" : "synth",
+	"subTitle" : "O2",
+	"description" : "Species of synthetic life that comes in a wide veriaty of sizes and shapes due to their body modabillity"
+  },
+  "nameGen" : [ "/species/synthmalenamegen.config:names", "/species/synthfemalenamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/synthhurt_male1.ogg", "/sfx/humanoid/synthhurt_female1.ogg" ],
+  "charGenTextLabels" : [ "Chest colour", "", "", "", "Eye colour", "Body Colour", "", "", "SYNTH", "Personality" ],
+  "skull" : "/humanoid/synth/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=cadcde?replace=31a6ffFF=99dfe7",
+  "defaultBlueprints" : {
+    "tier1" : [
+	
+  // Empty Hands
+      { "item" : "flagsynth" },
+	    
+// Anvil
+      { "item" : "ironshortsword" },
+      { "item" : "ironbroadsword" },
+      { "item" : "tungstenaxe" },
+      { "item" : "tungstenhammer" },
+	  { "item" : "synthpistol" },
+	  { "item" : "synthtier1chest" },
+	  { "item" : "synthtier1head" },
+	  { "item" : "synthtier1pants" },
+	  { "item" : "synthtier2chest" },
+	  { "item" : "synthtier2head" },
+	  { "item" : "synthtier2pants" },
+// Anvil2
+      { "item" : "titaniumdagger" },
+      { "item" : "titaniumspear" },
+      { "item" : "durasteelbroadsword" },
+      { "item" : "durasteelshortsword" },
+	  { "item" : "synthtier3chest" },
+	  { "item" : "synthtier3head" },
+	  { "item" : "synthtier3pants" },
+// Anvil3
+      { "item" : "aegisaltpistol" },
+      { "item" : "aegisaltbow" },
+      { "item" : "feroziumwand" },
+      { "item" : "feroziumstaff" },
+      { "item" : "violiumshortsword" },
+      { "item" : "violiumbroadsword" },
+	  { "item" : "synthtier4chest" },
+	  { "item" : "synthtier4head" },
+	  { "item" : "synthtier4pants" },
+	  { "item" : "synthtier5acceleratorchest" },
+	  { "item" : "synthtier5acceleratorhead" },
+	  { "item" : "synthtier5acceleratorpants" },
+	  { "item" : "synthtier5manipulatorchest" },
+	  { "item" : "synthtier5manipulatorhead" },
+	  { "item" : "synthtier5manipulatorpants" },
+	  { "item" : "synthtier5seperatorchest" },
+	  { "item" : "synthtier5seperatorhead" },
+	  { "item" : "synthtier5seperatorpants" },
+	  { "item" : "synthtier6acceleratorchest" },
+	  { "item" : "synthtier6acceleratorhead" },
+	  { "item" : "synthtier65acceleratorpants" },
+	  { "item" : "synthtier6manipulatorchest" },
+	  { "item" : "synthtier6manipulatorhead" },
+	  { "item" : "synthtier6manipulatorpants" },
+	  { "item" : "synthtier6seperatorchest" },
+	  { "item" : "synthtier6seperatorhead" },
+	  { "item" : "synthtier6seperatorpants" },
+// Furniture Table 2
+      { "item" : "synthstoragelocker" },
+      { "item" : "synthshipdoor" },
+      { "item" : "synthshiphatch" }
+// Spinning Wheel
+
+// Special	
+  
+]
+  },
+  
+  "altOptionAsUndyColor" : true,
+  "headOptionAsHairColor" : true,
+  "altOptionAsHairColor" : true,
+  "hairColorAsBodySubColor" : true,
+  "genders" : [
+    {
+       "name" : "male",
+      "image" : "/interface/title/synthmaleico.png",
+      "characterImage" : "/interface/title/synthmale.png",
+      "hair" : [ "" ],
+      "shirt" : [ "" ],
+      "pants" : [ "" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "",
+      "facialMask" : [ ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/synthfemico.png",
+      "characterImage" : "/interface/title/synthfemale.png",
+      "hair" : [ "" ],
+      "shirt" : [ "" ],
+      "pants" : [ "" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "",
+      "facialMask" : [ ]
+    }
+  ],
+  "bodyColor" : [ 
+        { "dc1f00" : "e9e9e9", "be1b00" : "c8c8c8", "951500" : "a1a1a1" },
+    	{ "dc1f00" : "e07e7e", "be1b00" : "da4949", "951500" : "da2525" },
+		{ "dc1f00" : "e98664", "be1b00" : "e86e40", "951500" : "dc5725" },
+		{ "dc1f00" : "e2e587", "be1b00" : "dfd64c", "951500" : "c6bc25" },
+		{ "dc1f00" : "bfec9e", "be1b00" : "9be97a", "951500" : "6acd20" },
+		{ "dc1f00" : "8ea4e7", "be1b00" : "5578e5", "951500" : "1948db" },
+		{ "dc1f00" : "de90de", "be1b00" : "cf59cf", "951500" : "b913b9" },
+		{ "dc1f00" : "a0ecd9", "be1b00" : "43dab4", "951500" : "0ca67d" },
+		{ "dc1f00" : "f5d7f3", "be1b00" : "ffb4fb", "951500" : "ff8bff" },
+		{ "dc1f00" : "313131", "be1b00" : "1f1e1e", "951500" : "010101" }
+   ],
+  "undyColor" : [  
+        { "000000" : "44a8c4", "3F3F3F" : "a0ccd8" },
+        { "000000" : "3a47a4", "3F3F3F" : "a8b0ea" },
+        { "000000" : "b61717", "3F3F3F" : "de9c9c" },
+		{ "000000" : "9dc0c0", "3F3F3F" : "c1e3e3" },  
+		{ "000000" : "57a42b", "3F3F3F" : "b0d39b" },  
+		{ "000000" : "e1e138", "3F3F3F" : "e9e99c" },  
+		{ "000000" : "da9122", "3F3F3F" : "d7c09c" },  
+		{ "000000" : "56d362", "3F3F3F" : "a1e4a7" }
+  ],
+  "hairColor" : [ 
+        { "e0975c" : "e9e9e9", "a85636" : "c8c8c8", "6f2919" : "a1a1a1" },
+        { "e0975c" : "e07e7e", "a85636" : "da4949", "6f2919" : "da2525" },
+        { "e0975c" : "e98664", "a85636" : "e86e40", "6f2919" : "dc5725" },
+        { "e0975c" : "e2e587", "a85636" : "dfd64c", "6f2919" : "c6bc25" },
+	    { "e0975c" : "bfec9e", "a85636" : "9be97a", "6f2919" : "6acd20" },
+	    { "e0975c" : "8ea4e7", "a85636" : "5578e5", "6f2919" : "1948db" },
+	    { "e0975c" : "de90de", "a85636" : "cf59cf", "6f2919" : "b913b9" },
+	    { "e0975c" : "a0ecd9", "a85636" : "43dab4", "6f2919" : "0ca67d" },
+	    { "e0975c" : "f5d7f3", "a85636" : "ffb4fb", "6f2919" : "ff8bff" },
+	    { "e0975c" : "313131", "a85636" : "1f1e1e", "6f2919" : "010101" }
+   ]
+}

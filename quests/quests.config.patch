@@ -1,0 +1,17 @@
+[
+	{
+		"op": "add",
+		"path": "/initialquests/synth",
+		"value": [
+			"protectorate"
+		]
+	},
+	{
+		"op": "add",
+		"path": "/pronounGenders/synth",
+		"value": {
+			"male": "neutral",
+			"female": "neutral"
+		}
+	}
+]

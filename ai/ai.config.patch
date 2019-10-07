@@ -1,0 +1,10 @@
+[{
+		"op" : "add",
+		"path" : "/species/synth",
+		"value" : {
+			"aiFrames" : "synthAI.png",
+			"portraitFrames" : "portraits/synthportrait.png",
+			"staticFrames" : "staticsynth.png"	
+		}
+	}
+]

@@ -1,0 +1,8 @@
+{
+  "name" : "grey",
+  "category" : "synthpet",
+  "type" : "body",
+  "frames" : {
+    "body" : "grey.png"
+  }
+}

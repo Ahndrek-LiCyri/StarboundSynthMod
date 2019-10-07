@@ -1,0 +1,16 @@
+[
+	{ "op" : "add",
+		"path" : "/speciesShips/synth",
+		"value" : [
+		    "/ships/synth/syntht0.structure",
+			"/ships/synth/syntht1.structure",
+			"/ships/synth/syntht2.structure",
+			"/ships/synth/syntht3.structure",
+			"/ships/synth/syntht4.structure",
+			"/ships/synth/syntht5.structure",
+			"/ships/synth/syntht6.structure",
+			"/ships/synth/syntht7.structure",
+			"/ships/synth/syntht8.structure"
+		]
+	}
+]

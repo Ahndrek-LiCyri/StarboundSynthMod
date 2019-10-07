@@ -1,0 +1,11 @@
+{
+  "tags" : "Species",
+  "author" : "Lazsathel",
+  "description" : "Synth species mod for Starbound",
+  "friendlyName" : "SynthMod",
+  "link" : "",
+  "name" : "SynthMod",
+  "path" : ".",
+  "steamContentId" : "",
+  "version" : "0.1"
+}

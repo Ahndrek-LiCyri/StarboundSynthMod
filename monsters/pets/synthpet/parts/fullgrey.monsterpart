@@ -1,0 +1,8 @@
+{
+  "name" : "fullgrey",
+  "category" : "synthpet",
+  "type" : "body",
+  "frames" : {
+    "body" : "fullgrey.png"
+  }
+}

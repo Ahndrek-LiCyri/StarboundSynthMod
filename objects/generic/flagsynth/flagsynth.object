@@ -1,0 +1,46 @@
+{
+  "objectName" : "flagsynth",
+  "colonyTags" : ["synth"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "teleporter",
+  "category" : "teleportMarker",
+  "price" : 70,
+  "radioMessagesOnPickup" : [ "pickupflag" ],
+  
+  "description" : "The Synth flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+  "shortdescription" : "synth Flag",
+  "race" : "synth",
+  "apexDescription" : "A synth flag. I can use this as a waypoint for teleportation.",
+  "avianDescription" : "This synth flag can be bookmarked as a destination for my ship teleporter.",
+  "floranDescription" : "synth flag makess good point to teleport back to ussing teleporter",
+  "glitchDescription" : "Observant. A small locator module attached to this synth flag allows it to be bookmarked for teleportation.",
+  "humanDescription" : "This synth flag can be saved as a location for my teleporter. Then I can return to it at any time.",
+  "hylotlDescription" : "This synth flag can act as a way point, enabling me to return to this point using a teleporter.",
+  "novakidDescription" : "I can bookmark this synth flag for quick teleportin'.",
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/destinationonly.config",
+  "inventoryIcon" : "flagsynthicon.png",
+  "orientations" : [
+    {
+      "image" : "flagsynth.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+      "imagePosition" : [-17, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "flagsynth.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [1, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+  //"soundEffect" : "/sfx/objects/flag_flap_loop.ogg"
+}

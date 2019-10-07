@@ -1,0 +1,8 @@
+{
+  "name" : "mint",
+  "category" : "synthpet",
+  "type" : "body",
+  "frames" : {
+    "body" : "mint.png"
+  }
+}
