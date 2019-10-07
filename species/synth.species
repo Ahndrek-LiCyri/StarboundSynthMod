@@ -7,7 +7,7 @@
   },
   "nameGen" : [ "/species/synthmalenamegen.config:names", "/species/synthfemalenamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/synthhurt_male1.ogg", "/sfx/humanoid/synthhurt_female1.ogg" ],
-  "charGenTextLabels" : [ "Chest colour", "", "", "", "Eye colour", "Body Colour", "", "", "SYNTH", "Personality" ],
+  "charGenTextLabels" : [ "Main Color", "???", "Shirt", "Pants", "2nd/LED Color", "???", "Shirt Color", "Pants Color", "SYNTH", "Personality" ],
   "skull" : "/humanoid/synth/dead.png",
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=cadcde?replace=31a6ffFF=99dfe7",
   "defaultBlueprints" : {
@@ -105,38 +105,66 @@
       "facialMask" : [ ]
     }
   ],
-  "bodyColor" : [ 
-        { "dc1f00" : "e9e9e9", "be1b00" : "c8c8c8", "951500" : "a1a1a1" },
-    	{ "dc1f00" : "e07e7e", "be1b00" : "da4949", "951500" : "da2525" },
-		{ "dc1f00" : "e98664", "be1b00" : "e86e40", "951500" : "dc5725" },
-		{ "dc1f00" : "e2e587", "be1b00" : "dfd64c", "951500" : "c6bc25" },
-		{ "dc1f00" : "bfec9e", "be1b00" : "9be97a", "951500" : "6acd20" },
-		{ "dc1f00" : "8ea4e7", "be1b00" : "5578e5", "951500" : "1948db" },
-		{ "dc1f00" : "de90de", "be1b00" : "cf59cf", "951500" : "b913b9" },
-		{ "dc1f00" : "a0ecd9", "be1b00" : "43dab4", "951500" : "0ca67d" },
-		{ "dc1f00" : "f5d7f3", "be1b00" : "ffb4fb", "951500" : "ff8bff" },
-		{ "dc1f00" : "313131", "be1b00" : "1f1e1e", "951500" : "010101" }
-   ],
-  "undyColor" : [  
-        { "000000" : "44a8c4", "3F3F3F" : "a0ccd8" },
-        { "000000" : "3a47a4", "3F3F3F" : "a8b0ea" },
-        { "000000" : "b61717", "3F3F3F" : "de9c9c" },
-		{ "000000" : "9dc0c0", "3F3F3F" : "c1e3e3" },  
-		{ "000000" : "57a42b", "3F3F3F" : "b0d39b" },  
-		{ "000000" : "e1e138", "3F3F3F" : "e9e99c" },  
-		{ "000000" : "da9122", "3F3F3F" : "d7c09c" },  
-		{ "000000" : "56d362", "3F3F3F" : "a1e4a7" }
-  ],
-  "hairColor" : [ 
-        { "e0975c" : "e9e9e9", "a85636" : "c8c8c8", "6f2919" : "a1a1a1" },
-        { "e0975c" : "e07e7e", "a85636" : "da4949", "6f2919" : "da2525" },
-        { "e0975c" : "e98664", "a85636" : "e86e40", "6f2919" : "dc5725" },
-        { "e0975c" : "e2e587", "a85636" : "dfd64c", "6f2919" : "c6bc25" },
-	    { "e0975c" : "bfec9e", "a85636" : "9be97a", "6f2919" : "6acd20" },
-	    { "e0975c" : "8ea4e7", "a85636" : "5578e5", "6f2919" : "1948db" },
-	    { "e0975c" : "de90de", "a85636" : "cf59cf", "6f2919" : "b913b9" },
-	    { "e0975c" : "a0ecd9", "a85636" : "43dab4", "6f2919" : "0ca67d" },
-	    { "e0975c" : "f5d7f3", "a85636" : "ffb4fb", "6f2919" : "ff8bff" },
-	    { "e0975c" : "313131", "a85636" : "1f1e1e", "6f2919" : "010101" }
-   ]
+	// For Body: {ffffff:NewMainColor, f0f0f0:NewOutlineLight, dcdcdc:NewOutlineDark}
+	"bodyColor" : [
+		{ "ffffff" : "ffffff", "f0f0f0" : "f0f0f0", "dcdcdc" : "dcdcdc" },  // Bright
+		{ "ffffff" : "669BFF", "f0f0f0" : "6680FF", "dcdcdc" : "666BFF" },  // Pemun (by Bird)
+		{ "ffffff" : "647CDE", "f0f0f0" : "536DCD", "dcdcdc" : "4763C2" },  // BlueDrop (by EnDecc)
+		{ "ffffff" : "D5991F", "f0f0f0" : "C89123", "dcdcdc" : "BA861F" },  // Desert (by Endecc)
+		{ "ffffff" : "CB5CB3", "f0f0f0" : "BF51A8", "dcdcdc" : "B4479E" },  // Hot Pink (by Endecc)
+		{ "ffffff" : "B83B3B", "f0f0f0" : "B23637", "dcdcdc" : "A62A2E" },  // Molten (by Endecc)
+		{ "ffffff" : "747474", "f0f0f0" : "626262", "dcdcdc" : "565656" },  // Cristal (by Bird)
+		{ "ffffff" : "25A866", "f0f0f0" : "109E5C", "dcdcdc" : "009352" },  // Swamp (by EnDecc)
+		{ "ffffff" : "0F3D3A", "f0f0f0" : "083836", "dcdcdc" : "033431" },  // Dark Sunset (by EnDecc)
+		{ "ffffff" : "E82A2A", "f0f0f0" : "CF2525", "dcdcdc" : "BB2222" },  // Aragon (by Bird)
+		{ "ffffff" : "4C2B93", "f0f0f0" : "422581", "dcdcdc" : "3E2379" },  // Bronte (by Bird)
+		{ "ffffff" : "57967F", "f0f0f0" : "4C8B75", "dcdcdc" : "42816B" },  // Mossy Green (by EnDecc)
+		{ "ffffff" : "273561", "f0f0f0" : "22315C", "dcdcdc" : "1A2B55" },  // Sea Foam (by EnDecc)
+		{ "ffffff" : "419A0D", "f0f0f0" : "3F8E14", "dcdcdc" : "3C8813" },  // Green Silver (by EnDecc)
+		{ "ffffff" : "E06138", "f0f0f0" : "D75931", "dcdcdc" : "CE512A" },  // Hot And Cold (by EnDecc)
+		{ "ffffff" : "07D7D7", "f0f0f0" : "45C9C8", "dcdcdc" : "36BDBD" },  // Blood Sky (by EnDecc)
+		{ "ffffff" : "39C720", "f0f0f0" : "3BBB23", "dcdcdc" : "22AA08" },  // Meadow (by EnDecc)
+		{ "ffffff" : "9B78A0", "f0f0f0" : "906E95", "dcdcdc" : "886B8C" },  // Purreen (by EnDecc)
+		{ "ffffff" : "FFA12B", "f0f0f0" : "FFA738", "dcdcdc" : "E19637" },  // Pumpkin (by Leviathinh)
+		{ "ffffff" : "00D5D7", "f0f0f0" : "00AAAB", "dcdcdc" : "00BCBE" },  // Beach (by Leviathinh)
+		{ "ffffff" : "ADBCB7", "f0f0f0" : "9AA7A3", "dcdcdc" : "8D9995" },  // Krush (by Bird)
+		{ "ffffff" : "E5E5E5", "f0f0f0" : "D6D6D6", "dcdcdc" : "DCDCDC" },  // Onnimo (by Bird)
+		{ "ffffff" : "2DC736", "f0f0f0" : "28B330", "dcdcdc" : "229729" },  // Pretzyl (by Bird)
+		{ "ffffff" : "81036F", "f0f0f0" : "731763", "dcdcdc" : "6D105E" },  // Deep Purple (by EnDecc)
+		{ "ffffff" : "72D4D9", "f0f0f0" : "66C9CE", "dcdcdc" : "5ABEC3" }   // Spring Day (by EnDecc)
+	],
+	//For Secondary: {707070:NewDarkPadding, A0A0A0:NewLightPadding, ffa439:EyeBright, cc832f:EyeDark}
+	"undyColor" : [
+		{ "707070" : "707070", "a0a0a0" : "a0a0a0", "ffa439" : "ffa439", "cc832f" : "cc832f" }, // Grey w. Orange LED
+		{ "707070" : "707070", "a0a0a0" : "a0a0a0", "ffa439" : "84FF39", "cc832f" : "6BCC2F" }, // Grey w. Green LED
+		{ "707070" : "707070", "a0a0a0" : "a0a0a0", "ffa439" : "39A5FF", "cc832f" : "2F85CC" }, // Grey w. Blue LED
+		{ "707070" : "707070", "a0a0a0" : "a0a0a0", "ffa439" : "268AFF", "cc832f" : "2672FF" }, // Pemun (by Bird)
+		{ "707070" : "707070", "a0a0a0" : "a0a0a0", "ffa439" : "3BECF6", "cc832f" : "3BC8F6" }, // BlueDrop (by EnDecc)
+		{ "707070" : "CAC8C5", "a0a0a0" : "E0DFDC", "ffa439" : "DD5B04", "cc832f" : "D05100" }, // Desert (by EnDecc)
+		{ "707070" : "E295D3", "a0a0a0" : "F4A5E4", "ffa439" : "B14DF9", "cc832f" : "9A34E5" }, // Hot Pink (by EnDecc)
+		{ "707070" : "9B5728", "a0a0a0" : "AC6636", "ffa439" : "DD3493", "cc832f" : "CB1A83" }, // Molten (by EnDecc)
+		{ "707070" : "2D2D2D", "a0a0a0" : "5E5E5E", "ffa439" : "0DF8B1", "cc832f" : "0DD4B1" }, // Cristal (by Bird)
+		{ "707070" : "1988BD", "a0a0a0" : "3598CE", "ffa439" : "03E924", "cc832f" : "00CF1E" }, // Swamp (by EnDecc)
+		{ "707070" : "5E2B29", "a0a0a0" : "683431", "ffa439" : "A6D83F", "cc832f" : "95C82C" }, // Dark Sunset (by EnDecc)
+		{ "707070" : "897979", "a0a0a0" : "998D8D", "ffa439" : "E6E1B2", "cc832f" : "D7D3A7" }, // Aragon (by Bird)
+		{ "707070" : "D2D2D2", "a0a0a0" : "E0E0E0", "ffa439" : "273BFF", "cc832f" : "FC264F" }, // Bronte (by Bird)
+		{ "707070" : "164435", "a0a0a0" : "105440", "ffa439" : "147C0C", "cc832f" : "1C6B13" }, // Mossy Green (by EnDecc)
+		{ "707070" : "22889E", "a0a0a0" : "3898AE", "ffa439" : "C3AC3C", "cc832f" : "AC9725" }, // Sea Foam (by EnDecc)
+		{ "707070" : "1C4A02", "a0a0a0" : "255A08", "ffa439" : "E0E0E0", "cc832f" : "C4C4C4" }, // Green Silver (by EnDecc)
+		{ "707070" : "63460F", "a0a0a0" : "73541D", "ffa439" : "2CF5EF", "cc832f" : "29DCD7" }, // Hot And Cold (by EnDecc)
+		{ "707070" : "212121", "a0a0a0" : "292929", "ffa439" : "CD3B57", "cc832f" : "BB2849" }, // Blood Sky (by EnDecc)
+		{ "707070" : "280CBC", "a0a0a0" : "401ECD", "ffa439" : "AC70A5", "cc832f" : "9C6195" }, // Meadow (by EnDecc)
+		{ "707070" : "78B77C", "a0a0a0" : "88C78C", "ffa439" : "78B73F", "cc832f" : "67A62F" }, // Purreen (by EnDecc)
+		{ "707070" : "000000", "a0a0a0" : "262626", "ffa439" : "FFF46E", "cc832f" : "FFEF2D" }, // Pumpkin (by Leviathinh)
+		{ "707070" : "FFDF85", "a0a0a0" : "E7C259", "ffa439" : "99FCFF", "cc832f" : "41F9FF" }, // Beach (by Leviathinh)
+		{ "707070" : "898282", "a0a0a0" : "979393", "ffa439" : "C4E4D8", "cc832f" : "B0CDC2" }, // Krush (by Bird)
+		{ "707070" : "E79C2A", "a0a0a0" : "545454", "ffa439" : "E96D6A", "cc832f" : "D36360" }, // Onnimo (by Bird)
+		{ "707070" : "D2E5E8", "a0a0a0" : "F4FCFD", "ffa439" : "DDE641", "cc832f" : "CFD73C" }, // Pretzyl (by Bird)
+		{ "707070" : "5C0F16", "a0a0a0" : "6D101B", "ffa439" : "E3D000", "cc832f" : "C8B800" }, // Deep Purple (by EnDecc)
+		{ "707070" : "97D262", "a0a0a0" : "A7E372", "ffa439" : "A7E372", "cc832f" : "97D262" }  // Spring day (by EnDecc)
+	],
+	//Unused for now, ignore
+	"hairColor" : [
+		{ "ffffff" : "ffffff" }
+	]
 }
